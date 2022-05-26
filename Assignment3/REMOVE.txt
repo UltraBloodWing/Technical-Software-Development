@@ -1,0 +1,67 @@
+/*
+		//logic codeblock
+		if (evolving_fault == "yes") {
+			cause = "explosion";
+		}
+		else {
+			if (gradient >= 0.100) {
+				if (voltage <= 0.100) {
+					cause = "encroachment";
+				}
+				else {
+					if (permanent_fault == "yes") {
+						cause = "crane";
+					}
+					else {
+						if (time_interval >= 100) {
+							cause = "pollution";
+						}
+						else {
+							cause = "lightning";
+						}
+					}
+				}
+			}
+			else {
+				cause = "encroachment";
+			}
+		}
+*/
+
+/*             
+                //open writefile and write to corresponidng file & increment count 
+		ofstream writefile;
+
+		if (cause == "explosion") {
+			explosion_count += 1;
+			writefile.open("ctexplod.txt", ios_base::app);
+			writefile << evolving_fault << " " << gradient << " " << voltage << " " << permanent_fault << " " << time_interval << endl;		
+		}
+
+		if (cause == "encroachment") {
+			encroachment_count += 1;
+			writefile.open("treeencr.txt", ios_base::app);
+			writefile << evolving_fault << " " << gradient << " " << voltage << " " << permanent_fault << " " << time_interval << endl;
+		}
+
+		if (cause == "crane") {
+			crane_count++;
+			writefile.open("crane.txt", ios_base::app);
+			writefile << evolving_fault << " " << gradient << " " << voltage << " " << permanent_fault << " " << time_interval << endl;			
+		}
+
+		if (cause == "pollution") {
+			pollution_count += 1;
+			writefile.open("pollut.txt", ios_base::app);
+			writefile << evolving_fault << " " << gradient << " " << voltage << " " << permanent_fault << " " << time_interval << endl;
+		}
+
+		if (cause == "lightning") {
+			lightning_count++;
+			writefile.open("lightnin.txt", ios_base::app);
+			writefile << evolving_fault << " " << gradient << " " << voltage << " " << permanent_fault << " " << time_interval << endl;
+		}
+
+		//close writefile
+		writefile.close();
+*/
